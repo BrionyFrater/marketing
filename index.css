@@ -6,15 +6,17 @@
 	html {
 		scroll-behavior: smooth;
 	}
+
+  body{
+    background-image: radial-gradient(rgb(202, 202, 202) 1px, transparent 0);
+    background-image: radial-gradient(circle at 1px 1px, rgb(202, 202, 202) 1px, transparent 0);
+  }
 	
-	body {
-    scrollbar-color: #d3d2d200 #ebff00;
-    scrollbar-width: thin;
-	}
 
 }
 
 @layer components{
+
 	
 }
 
@@ -22,15 +24,12 @@
 
 @layer utilities {
 
-  @-moz-document url-prefix() {
-
+  
     /*Firefox*/
     body{
-      
+      scrollbar-color: white #ebff00 !important;
+      scrollbar-width: thin !important;    
     }
-  }
-
-
 
   /*Chrome Safari*/
   ::-webkit-scrollbar {
@@ -40,14 +39,14 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #000;
+    background: #6d6d6d;
     border-radius: 30px;
 
   }
 
   ::-webkit-scrollbar-track {
-    background-color: white;
-}
+    background-color: transparent;
+  }
 
 
 }
