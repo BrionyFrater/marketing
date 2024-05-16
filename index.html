@@ -23,25 +23,18 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'yellow': '#ebff00',
-              'green': '#d4ff3f',
-              'white': '#fefefe'
-            },
-            
-            fontFamily: {
-              'sans': ['"Montserrat"', 'sans-serif'],
-              'mono': ['"JetBrains Mono"', 'monospace']
-            }
-          }
-        }
-      }
-    </script>
+  
+    
+    <style type="text/tailwindcss">
 
+      h1{
+        @apply text-9xl font-sans font-black uppercase !important;
+      }
+
+
+    </style>
+
+    
 
   </head>
 
@@ -58,7 +51,7 @@
       
       <section>
        
-        <h2 class="uppercase font-sans font-bold tracking-tighter">Hi, we&apos;re</h2>
+        <h2 class="uppercase font-sans font-extrabold tracking-tighter text-4xl">Hi, we&apos;re</h2>
         <h1>Gesture Creators</h1>
 
         <div>

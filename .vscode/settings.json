@@ -7,7 +7,5 @@
     "editor.quickSuggestions": {
         "strings": true
     },
-    "css.customData": [".vscode/tailwind.json"]
-    
-
+   
 }

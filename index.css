@@ -1,65 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-@layer base {
-	*, *::after, *::before {
-		@apply border-box, p-0, m-0;
-	}
-
-	html {
-		scroll-behavior: smooth;
-	}
-
-  body{
-    background-image: radial-gradient(rgb(202, 202, 202) 1px, transparent 0);
-    background-image: radial-gradient(circle at 1px 1px, rgb(202, 202, 202) 1px, transparent 0);
-    
-    @apply text-green-400;
-  }
-
-  h1{
-    @apply font-sans font-black uppercase !important;
-  }
-	
-  
+html {
+  scroll-behavior: smooth;
 }
 
-@layer components{
+body {
+  background-image: radial-gradient(rgb(202, 202, 202) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgb(202, 202, 202) 1px, transparent 0);
 
-	
+  scrollbar-color: white #ebff00 !important;
+  scrollbar-width: thin !important;
 }
 
 
+/*Chrome Safari*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 
-@layer utilities {
+}
 
-  
-    /*Firefox*/
-    body{
-      scrollbar-color: white #ebff00 !important;
-      scrollbar-width: thin !important;    
+::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+  border-radius: 30px;
 
-      
-    }
+}
 
-  /*Chrome Safari*/
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #6d6d6d;
-    border-radius: 30px;
-
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
