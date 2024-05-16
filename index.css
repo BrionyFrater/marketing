@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @layer base {
 	*, *::after, *::before {
 		@apply border-box, p-0, m-0;
@@ -10,9 +15,14 @@
   body{
     background-image: radial-gradient(rgb(202, 202, 202) 1px, transparent 0);
     background-image: radial-gradient(circle at 1px 1px, rgb(202, 202, 202) 1px, transparent 0);
+    
+  }
+
+  h1{
+    @apply font-sans font-black uppercase !important;
   }
 	
-
+  
 }
 
 @layer components{
@@ -29,6 +39,8 @@
     body{
       scrollbar-color: white #ebff00 !important;
       scrollbar-width: thin !important;    
+
+      
     }
 
   /*Chrome Safari*/
