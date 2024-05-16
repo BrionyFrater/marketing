@@ -16,6 +16,7 @@
     background-image: radial-gradient(rgb(202, 202, 202) 1px, transparent 0);
     background-image: radial-gradient(circle at 1px 1px, rgb(202, 202, 202) 1px, transparent 0);
     
+    @apply text-green-400;
   }
 
   h1{
