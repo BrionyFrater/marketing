@@ -13,7 +13,11 @@ $(document).ready(function () {
             fontFamily: {
               'sans': ['"Montserrat"', 'sans-serif'],
               'mono': ['"JetBrains Mono"', 'monospace']
-            }
+            },
+
+            // screens:{
+            //   'sm': {'min': '600px', 'max': '767px'}
+            // }
           }
         }
       }
