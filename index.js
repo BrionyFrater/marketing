@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    lucide.createIcons();
+    
     
     tailwind.config = {
         theme: {
@@ -21,5 +21,7 @@ $(document).ready(function () {
           }
         }
       }
+
+      lucide.createIcons();
     
 });

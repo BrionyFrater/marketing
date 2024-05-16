@@ -16,19 +16,42 @@
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<!-- Application CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Application CSS -->
     <link rel="stylesheet" href="index.css">
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-  
-    
     <style type="text/tailwindcss">
 
       section{
-        @apply mb-16;
+        @apply mb-28;
+      }
+
+      .highlight{
+        @apply relative after:left-[-26px] after:top-[-11px] after:w-[130%] after:h-8 after:bg-yellow after:absolute after:z-[-1];
+      }
+
+      .icon-box{
+        @apply bg-yellow rounded-xl p-5 flex flex-col gap-4;
+      }
+
+      .icon-box .lucide{
+        @apply self-center;
+      }
+
+      h5{
+        @apply font-bold self-center;
+      }
+
+      .line{
+        @apply h-2 w-full mb-8 bg-black;
+      }
+
+      h3{ 
+        @apply flex gap-4 items-start;
       }
 
 
@@ -38,7 +61,7 @@
 
   </head>
 
-  <body class="font-mono bg-white text-[1rem] bg-[size:30px_30px] sm:text-[1.2rem]">
+  <body class="font-mono bg-white text-[1rem] bg-[size:30px_30px] sm:text-[1.1rem]">
 
     <header>
       
@@ -47,13 +70,13 @@
     </header>
 
     <div class="flex flex-col items-center justify-center ">
-      <main class="max-w-[1450px] p-16">
+      <main class="max-w-[1450px] p-24">
       
         
         <section>
         
-          <h1 class="uppercase font-sans font-extrabold tracking-tighter text-4xl">Hi, we&apos;re</h1>
-          <h1 class="text-5xl font-sans font-black uppercase sm:text-7xl min-[800px]:text-9xl">Gesture Creators</h1>
+          <h1 class="highlight after:w-[5rem] after:h-5 after:left-[3.5em] after:top-[1rem] uppercase font-sans font-extrabold tracking-tighter text-4xl">Hi, we&apos;re</h1>
+          <h1 class="text-5xl font-sans font-black uppercase sm:text-7xl min-[940px]:text-9xl">Gesture Creators</h1>
 
           <div class="mt-10 max-w-2xl">
             <p>
@@ -70,30 +93,101 @@
 
         </section>
 
+
+
+        <section>
           
-        
-        <section class="flex justify-between gap-7">
-        
-          <div class="flex flex-col gap-4 max">
-            <h3 class="uppercase text-3xl max-w-fit relative after:bg-yellow after:absolute after:left-[-26px] after:top-[-8px] after:w-[140%] after:h-8 after:z-[-1]">About SignSync</h3>
-            <h2 class="uppercase font-bold max-w-[300px] leading-9 text-4xl font-sans">The AI solution connecting JSL and spoken language</h2>
+          <div class="flex justify-between flex-col gap-7 mb-10 min-[940px]:flex-row">
+            
+            <div class="flex flex-col gap-4">
+              <h3 class="highlight uppercase text-2xl max-w-fit">About SignSync
+
+                <i data-lucide="arrow-down-right"></i>
+              </h3>
+              <h2 class="uppercase font-semibold max-w-[270px] leading-9 text-3xl font-sans">The AI solution connecting JSL and spoken language</h2>
+            </div>
+            
+            
+            <div class="flex flex-col gap-7 max-w-[800px]">
+
+              <p class="">
+                SignSync&trade; leverages artificial intelligence to translate Jamaican Sign Language (JSL) into English. We designed this technology to bridge communication barriers between deaf and hearing individuals and raise awareness about JSL.
+              </p>
+
+              <p>
+                The AI behind SignSync was trained in consultation with the Jamaica Association for the Deaf with the goal of accurately interpreting JSL.
+              </p>
+
+              
+
+            </div>
           </div>
+
+          <div class="flex gap-7 flex-col mb-16 min-[940px]:flex-row">
+            <div class="icon-box">
+              
+              <i data-lucide="clock"></i>
+              <h5>Real Time Translation</h5>
+              <p>Capture live sign language gestures and immediately display English translations.</p>
+            </div>
+  
+            <!-- <div class="icon-box">
+              <i data-lucide="layers-3"></i>
+              <h5>Understands JSL's Complexity</h5>
+              <p>Our AI understands the importance of facial expressions, eyebrow movements, and shoulder gestures, ensuring accurate interpretation.</p>
+            </div> -->
+  
+            <div class="icon-box">
+              <i data-lucide="hand-metal"></i>
+              <h5>JSL to Text</h5>
+              <p>Uses AI model to instantly translate Jamaican Sign Language gestures into text with accuracy and real-time responsiveness.</p>
+            </div>
+            
+            <div class="icon-box">
+              <i data-lucide="text-cursor-input"></i>
+              <h5>Text to JSL</h5>
+              <p>Effortlessly convert text input into Jamaican Sign Language videos, sourced from our comprehensive database.</p>
+            </div>
+          </div>
+
+
+        </section>
+
+        <div class="line"></div>
+
+        
+        <section class="flex flex-col gap-4">
+        
+          <h3 class="highlight uppercase text-2xl max-w-fit">How does it Work
+            <i data-lucide="arrow-down-right"></i>
+          </h3>
           
-          <p class=""> 
-            hhkjkkkh
+          <p class="max-w-[1000px]">
+            SignSync uses artificial intelligence to accurately interpret Jamaican Sign Language (JSL) from video data. When you upload a video or sign live through the camera, the video information is processed by our AI model. The AI was trained using data from various individuals performing different signs, enabling it to recognize a variety of sign language gestures. Once the AI finishes processing a video, it instantly displays the English translation as text. Additionally, SignSync facilitates Text to JSL translation by enabling users to search our comprehensive database using English phrases to find corresponding JSL videos.
+          </p>
+
+          <p>
+            NB The Real-Time feature is not currently integrated into the website&apos;s frontend.
           </p>
 
         </section>
         
-        <section>
-        
-          <h3></h3>
+        <div class="line"></div>
 
-        </section>
         
-        <section>
+        <section class="flex flex-col gap-4">
         
-          <h3></h3>
+          <h3 class="highlight uppercase text-2xl max-w-fit">Why use SignSync
+            <i data-lucide="arrow-down-right"></i>
+          </h3>
+          
+          <p class="max-w-[1000px]">
+            SignSync uses artificial intelligence to accurately interpret Jamaican Sign Language (JSL) from video data. When you upload a video or sign live through the camera, the video information is processed by our AI model. The AI was trained using data from various individuals performing different signs, enabling it to recognize a variety of sign language gestures. Once the AI finishes processing a video, it instantly displays the English translation as text. Additionally, SignSync facilitates Text to JSL translation by enabling users to search our comprehensive database using English phrases to find corresponding JSL videos.
+          </p>
+
+          <p>
+            NB The Real-Time feature is not currently integrated into the website&apos;s frontend.
+          </p>
 
         </section>
         
@@ -111,8 +205,6 @@
     </footer>
 
     <!--Tailwind, icons, jquery-->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> -->
-    
     <script src="https://unpkg.com/lucide@latest"></script>
     <script 
 
