@@ -8,6 +8,8 @@
 	}
 	
 	body {
+    scrollbar-color: #d3d2d200 #ebff00;
+    scrollbar-width: thin;
 	}
 
 }
@@ -24,8 +26,7 @@
 
     /*Firefox*/
     body{
-      scrollbar-color: #d3d2d2 white;
-      scrollbar-width: thin;
+      
     }
   }
 
