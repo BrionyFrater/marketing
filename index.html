@@ -31,8 +31,8 @@
       }
 
       .highlight{
-        @apply relative after:left-[-26px] after:top-[-11px] after:w-[130%] after:h-8 after:bg-yellow after:absolute after:z-[-1];
-      }
+        @apply relative after:left-[-26px] after:top-[-11px] after:w-[130%] after:h-8 after:bg-yellow after:absolute after:z-[-1] max-[471px]:after:left-[-5px] max-[471px]:after:w-[110%];
+      } 
 
       .icon-box{
         @apply bg-yellow rounded-xl p-5 flex flex-col gap-4;
@@ -47,11 +47,11 @@
       }
 
       .line{
-        @apply h-1 w-full mb-8 bg-black;
+        @apply h-1 w-full mb-16 bg-black;
       }
 
       h3{ 
-        @apply flex gap-4 items-start;
+        @apply flex gap-4 items-end;
       }
 
 
@@ -162,13 +162,18 @@
             <i data-lucide="arrow-down-right"></i>
           </h3>
           
-          <p class="max-w-[1000px]">
-            SignSync uses artificial intelligence to accurately interpret Jamaican Sign Language (JSL) from video data. When you upload a video or sign live through the camera, the video information is processed by our AI model. The AI was trained using data from various individuals performing different signs, enabling it to recognize a variety of sign language gestures. Once the AI finishes processing a video, it instantly displays the English translation as text. Additionally, SignSync facilitates Text to JSL translation by enabling users to search our comprehensive database using English phrases to find corresponding JSL videos.
-          </p>
-
-          <p>
+          <div class="max-w-[1000px]">
+            <p class="mb-7">
+              SignSync uses artificial intelligence to accurately interpret Jamaican Sign Language (JSL) from video data. When you upload a video or sign live through the camera, the video information is processed by our AI model. 
+            </p>
+            <p>
+              The AI was trained using data from various individuals performing different signs, enabling it to recognize a variety of sign language gestures. Once the AI finishes processing a video, it instantly displays the English translation as text. Additionally, SignSync facilitates Text to JSL translation by enabling users to search our comprehensive database using English phrases to find corresponding JSL videos.
+            </p>
+          </div>
+        
+          <!-- <p>
             NB The Real-Time feature is not currently integrated into the website&apos;s frontend.
-          </p>
+          </p> -->
 
         </section>
         
