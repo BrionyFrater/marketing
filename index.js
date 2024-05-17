@@ -74,8 +74,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
             x: 30,
             ease: "expo.out"
       });
-      
 
+      gsap.from("#why" ,{
+            scrollTrigger: {
+                  trigger: "#why",
+                  start: "top 60%",
+                  end: "top 30%",
+                  toggleActions: "play none none reverse"
+            },
+            opacity: 0,
+            duration: 1,
+            y: 60,
+            ease: "expo.out"
+      });
 
      
 
