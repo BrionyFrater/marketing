@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                   toggleActions: "play none none reverse"
             },
             opacity: 0,
-            duration: 1,
+            duration: 0.7,
             y: 30,
             stagger: 0.3,
             ease: "power4.inOut"
@@ -96,12 +96,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
                   toggleActions: "play none none reverse"
             },
             opacity: 0,
-            duration: 1,
+            duration: 0.7,
             stagger: 0.2,
             y: -60,
             ease: "power4.inOut"
       });
 
+      
 
       timeline.to(".overlay", {
             duration: 0.5,
