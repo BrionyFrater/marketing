@@ -88,7 +88,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
             ease: "expo.out"
       });
 
-     
+      gsap.from(".github-links a" ,{
+            scrollTrigger: {
+                  trigger: ".github-links",
+                  start: "top 80%",
+                  end: "top 40%",
+                  toggleActions: "play none none reverse"
+            },
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            y: -60,
+            ease: "power4.inOut"
+      });
+
 
       timeline.to(".overlay", {
             duration: 0.5,
