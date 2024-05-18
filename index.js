@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: 0,
             duration: 0.7,
             stagger: 0.2,
-            y: -60,
+            y: 60,
             ease: "power4.inOut"
       });
 
